@@ -26,6 +26,7 @@ struct HomeView: View {
                 }
             }
         }
+        .navigationBarTitle("Accueil", displayMode: .inline)
     }
 }
 

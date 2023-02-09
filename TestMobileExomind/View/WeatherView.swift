@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct WeatherView: View {
+    @ObservedObject var vm: WheatherViewModel = WheatherViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Text(vm.currentWaitingMessage)
+                .font(.subheadline)
+                
+            Spacer()
+            Text(vm.messageAboveTheProgressBar)
+                .font(.title2)
+            
+            HStack {
+                ProgressView(value: vm.currentProgressionValue, total: vm.progressionMaxValueInSeconds) {
+                    
+                }
+                .padding(.horizontal)
+                Text("\(vm.percentageOfProgression) %")
+                Spacer()
+            }
+        }
+        .navigationBarTitle(Text("Météo"), displayMode:.inline)
+        .toolbarBackground(
+            Color.white,
+            for: .navigationBar
+        )
+        .toolbarBackground(.visible, for: .navigationBar)
+                
     }
 }
 

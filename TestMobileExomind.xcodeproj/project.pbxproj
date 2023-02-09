@@ -14,6 +14,11 @@
 		8FD0AE7A2994FCDB00B6A0A8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE792994FCDB00B6A0A8 /* HomeViewModel.swift */; };
 		8FD0AE7C2994FE1900B6A0A8 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE7B2994FE1900B6A0A8 /* WeatherView.swift */; };
 		8FD0AE7E2995004700B6A0A8 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE7D2995004700B6A0A8 /* WeatherViewModel.swift */; };
+		8FD0AE822995060400B6A0A8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD0AE812995060400B6A0A8 /* Alamofire */; };
+		8FD0AE842995079F00B6A0A8 /* OpenWeatherSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE832995079F00B6A0A8 /* OpenWeatherSession.swift */; };
+		8FD0AE862995082B00B6A0A8 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE852995082B00B6A0A8 /* ApiKeys.swift */; };
+		8FD0AE882995088000B6A0A8 /* ApiConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE872995088000B6A0A8 /* ApiConstant.swift */; };
+		8FD0AE8C29950B2800B6A0A8 /* OpenWeatherApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE8B29950B2800B6A0A8 /* OpenWeatherApiResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		8FD0AE792994FCDB00B6A0A8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8FD0AE7B2994FE1900B6A0A8 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		8FD0AE7D2995004700B6A0A8 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		8FD0AE7F2995010700B6A0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8FD0AE832995079F00B6A0A8 /* OpenWeatherSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherSession.swift; sourceTree = "<group>"; };
+		8FD0AE852995082B00B6A0A8 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		8FD0AE872995088000B6A0A8 /* ApiConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstant.swift; sourceTree = "<group>"; };
+		8FD0AE8B29950B2800B6A0A8 /* OpenWeatherApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherApiResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD0AE822995060400B6A0A8 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +68,7 @@
 		8FD0AE662994FB4700B6A0A8 /* TestMobileExomind */ = {
 			isa = PBXGroup;
 			children = (
+				8FD0AE7F2995010700B6A0A8 /* Info.plist */,
 				8FD0AE752994FC5700B6A0A8 /* Data */,
 				8FD0AE762994FC6300B6A0A8 /* Model */,
 				8FD0AE772994FC7400B6A0A8 /* View */,
@@ -79,6 +91,9 @@
 		8FD0AE752994FC5700B6A0A8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8FD0AE832995079F00B6A0A8 /* OpenWeatherSession.swift */,
+				8FD0AE852995082B00B6A0A8 /* ApiKeys.swift */,
+				8FD0AE872995088000B6A0A8 /* ApiConstant.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -86,6 +101,7 @@
 		8FD0AE762994FC6300B6A0A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8FD0AE8B29950B2800B6A0A8 /* OpenWeatherApiResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +140,9 @@
 			dependencies = (
 			);
 			name = TestMobileExomind;
+			packageProductDependencies = (
+				8FD0AE812995060400B6A0A8 /* Alamofire */,
+			);
 			productName = TestMobileExomind;
 			productReference = 8FD0AE642994FB4700B6A0A8 /* TestMobileExomind.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 8FD0AE5B2994FB4700B6A0A8;
+			packageReferences = (
+				8FD0AE802995060400B6A0A8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 8FD0AE652994FB4700B6A0A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,11 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD0AE882995088000B6A0A8 /* ApiConstant.swift in Sources */,
 				8FD0AE7E2995004700B6A0A8 /* WeatherViewModel.swift in Sources */,
 				8FD0AE6A2994FB4700B6A0A8 /* HomeView.swift in Sources */,
+				8FD0AE8C29950B2800B6A0A8 /* OpenWeatherApiResponse.swift in Sources */,
+				8FD0AE862995082B00B6A0A8 /* ApiKeys.swift in Sources */,
 				8FD0AE7A2994FCDB00B6A0A8 /* HomeViewModel.swift in Sources */,
 				8FD0AE682994FB4700B6A0A8 /* TestMobileExomindApp.swift in Sources */,
 				8FD0AE7C2994FE1900B6A0A8 /* WeatherView.swift in Sources */,
+				8FD0AE842995079F00B6A0A8 /* OpenWeatherSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +340,7 @@
 				DEVELOPMENT_TEAM = 3GJVGX425T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TestMobileExomind/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -343,7 +369,7 @@
 				DEVELOPMENT_TEAM = 3GJVGX425T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TestMobileExomind/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -383,6 +409,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FD0AE802995060400B6A0A8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FD0AE812995060400B6A0A8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD0AE802995060400B6A0A8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FD0AE5C2994FB4700B6A0A8 /* Project object */;
 }
