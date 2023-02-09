@@ -15,27 +15,29 @@ struct WeatherView: View {
             Spacer()
             Text(vm.currentWaitingMessage)
                 .font(.subheadline)
-                
+            
             Spacer()
             Text(vm.messageAboveTheProgressBar)
                 .font(.title2)
             
-            HStack {
-                ProgressView(value: vm.currentProgressionValue, total: vm.progressionMaxValueInSeconds) {
-                    
-                }
-                .padding(.horizontal)
-                Text("\(vm.percentageOfProgression) %")
-                Spacer()
+            
+            ProgressView(value: vm.currentProgressionValue, total: vm.progressionMaxValueInSeconds) {
+                
             }
+            .padding(.horizontal)
+            
+            Text("\(vm.percentageOfProgression) %")
+                .padding(.horizontal)
         }
         .navigationBarTitle(Text("Météo"), displayMode:.inline)
         .toolbarBackground(
             Color.white,
             for: .navigationBar
         )
-        .toolbarBackground(.visible, for: .navigationBar)
-                
+        .onReceive(vm.timer) { _ in
+            vm.incrementCurrentProgressionValue()
+        }
+        
     }
 }
 

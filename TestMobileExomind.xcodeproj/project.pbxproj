@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F2E98F029950D4600A9ACE6 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E98EF29950D4600A9ACE6 /* RequestService.swift */; };
+		8F2E98F22995149400A9ACE6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E98F12995149400A9ACE6 /* City.swift */; };
+		8F2E98F42995153000A9ACE6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E98F32995153000A9ACE6 /* Weather.swift */; };
 		8FD0AE682994FB4700B6A0A8 /* TestMobileExomindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE672994FB4700B6A0A8 /* TestMobileExomindApp.swift */; };
 		8FD0AE6A2994FB4700B6A0A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0AE692994FB4700B6A0A8 /* HomeView.swift */; };
 		8FD0AE6C2994FB4900B6A0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0AE6B2994FB4900B6A0A8 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F2E98EF29950D4600A9ACE6 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		8F2E98F12995149400A9ACE6 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		8F2E98F32995153000A9ACE6 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		8FD0AE642994FB4700B6A0A8 /* TestMobileExomind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMobileExomind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD0AE672994FB4700B6A0A8 /* TestMobileExomindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMobileExomindApp.swift; sourceTree = "<group>"; };
 		8FD0AE692994FB4700B6A0A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 				8FD0AE832995079F00B6A0A8 /* OpenWeatherSession.swift */,
 				8FD0AE852995082B00B6A0A8 /* ApiKeys.swift */,
 				8FD0AE872995088000B6A0A8 /* ApiConstant.swift */,
+				8F2E98EF29950D4600A9ACE6 /* RequestService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -102,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				8FD0AE8B29950B2800B6A0A8 /* OpenWeatherApiResponse.swift */,
+				8F2E98F12995149400A9ACE6 /* City.swift */,
+				8F2E98F32995153000A9ACE6 /* Weather.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,9 +212,12 @@
 				8FD0AE882995088000B6A0A8 /* ApiConstant.swift in Sources */,
 				8FD0AE7E2995004700B6A0A8 /* WeatherViewModel.swift in Sources */,
 				8FD0AE6A2994FB4700B6A0A8 /* HomeView.swift in Sources */,
+				8F2E98F029950D4600A9ACE6 /* RequestService.swift in Sources */,
+				8F2E98F42995153000A9ACE6 /* Weather.swift in Sources */,
 				8FD0AE8C29950B2800B6A0A8 /* OpenWeatherApiResponse.swift in Sources */,
 				8FD0AE862995082B00B6A0A8 /* ApiKeys.swift in Sources */,
 				8FD0AE7A2994FCDB00B6A0A8 /* HomeViewModel.swift in Sources */,
+				8F2E98F22995149400A9ACE6 /* City.swift in Sources */,
 				8FD0AE682994FB4700B6A0A8 /* TestMobileExomindApp.swift in Sources */,
 				8FD0AE7C2994FE1900B6A0A8 /* WeatherView.swift in Sources */,
 				8FD0AE842995079F00B6A0A8 /* OpenWeatherSession.swift in Sources */,
