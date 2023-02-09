@@ -14,7 +14,7 @@ protocol AlamoFireSession {
 
 final class OpenWeatherSession: AlamoFireSession {
     func request(url: URL, callback: @escaping (AFDataResponse<Data?>) -> Void) {
-
+        
         AF.request(url).response { response in
             callback(response)
         }

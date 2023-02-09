@@ -12,22 +12,36 @@ struct WeatherView: View {
     
     var body: some View {
         VStack {
-            Spacer()
-            Text(vm.currentWaitingMessage)
-                .font(.subheadline)
-            
-            Spacer()
-            Text(vm.messageAboveTheProgressBar)
-                .font(.title2)
-            
-            
-            ProgressView(value: vm.currentProgressionValue, total: vm.progressionMaxValueInSeconds) {
-                
+            if vm.presenteWeatherResult {
+                WeatherChartView(weatherArray: vm.weatherArray)
+                Button("Recommencer") {
+                    vm.restartTimer()
+                }
+                .padding()
+                .foregroundColor(.white)
+                .fontWeight(.bold)
+                .background(Color("exomind"))
+                .cornerRadius(12)
+            } else {
+                VStack {
+                    Spacer()
+                    Text(vm.currentWaitingMessage)
+                        .font(.subheadline)
+                        .padding()
+                    Spacer()
+                    Text(vm.messageAboveTheProgressBar)
+                        .font(.title2)
+                    
+                    
+                    ProgressView(value: vm.currentProgressionValue, total: vm.progressionMaxValueInSeconds) {
+                        
+                    }
+                    .padding(.horizontal)
+                    
+                    Text("\(vm.percentageOfProgression) %")
+                        .padding(.horizontal)
+                }
             }
-            .padding(.horizontal)
-            
-            Text("\(vm.percentageOfProgression) %")
-                .padding(.horizontal)
         }
         .navigationBarTitle(Text("Météo"), displayMode:.inline)
         .toolbarBackground(
@@ -37,7 +51,9 @@ struct WeatherView: View {
         .onReceive(vm.timer) { _ in
             vm.incrementCurrentProgressionValue()
         }
-        
+        .onDisappear(){
+            vm.restartTimer()
+        }
     }
 }
 
